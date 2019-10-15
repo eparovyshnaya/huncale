@@ -1,0 +1,57 @@
+[
+  {
+    "id": "hunting-resources-mammals",
+    "name": "Млекопитающие",
+    "parent": ""
+  },
+  {
+    "id": "hunting-resources-mammals-bears",
+    "name": "Медведи",
+    "parent": "hunting-resources-mammals"
+  },
+  {
+    "id": "hunting-resources-mammals-hoofed",
+    "name": "Копытные животные",
+    "parent": "hunting-resources-mammals"
+  },
+  {
+    "id": "hunting-resources-mammals-fur-bearing",
+    "name": "Пушные животные",
+    "parent": "hunting-resources-mammals"
+  },
+  {
+    "id": "hunting-resources-birds",
+    "name": "Пернатая дичь",
+    "parent": ""
+  },
+  {
+    "id": "hunting-resources-birds-upland-fowl",
+    "name": "Боровая дичь",
+    "parent": "hunting-resources-birds"
+  },
+  {
+    "id": "hunting-resources-birds-moor-meadow-fowl",
+    "name": "Болотно-луговая дичь",
+    "parent": "hunting-resources-birds"
+  },
+  {
+    "id": "hunting-resources-birds-field-fowl",
+    "name": "Полевая и степная дичь",
+    "parent": "hunting-resources-birds"
+  },
+  {
+    "id": "hunting-resources-birds-mountain-fowl",
+    "name": "Горная дичь",
+    "parent": "hunting-resources-birds"
+  },
+  {
+    "id": "hunting-resources-birds-water-fowl",
+    "name": "Водная дичь",
+    "parent": "hunting-resources-birds"
+  },
+  {
+    "id": "hunting-resources-birds-vital-fowl",
+    "name": "Иная дичь",
+    "parent": "hunting-resources-birds"
+  }
+]

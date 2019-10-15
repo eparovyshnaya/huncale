@@ -1,0 +1,1988 @@
+[
+  {
+    "name": "Кабан",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Sus scrofa",
+    "ratePerUnit": "450",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июня по 28 (29) февраля"
+      }
+    ]
+  },
+  {
+    "name": "Кабарга",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Moschus",
+    "ratePerUnit": "450",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 ноября по 31 декабря"
+      }
+    ]
+  },
+  {
+    "name": "Дикий северный олень",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Rangifer tarandus",
+    "ratePerUnit": "300",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 15 марта"
+      }
+    ]
+  },
+  {
+    "name": "Косуля европейская",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Capreólus capreólus",
+    "ratePerUnit": "450",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 31 декабря"
+      },
+      {
+        "period": "с 20 мая по 20 июня",
+        "conditions": "взрослые самцы"
+      },
+      {
+        "period": "с 15 июля по 15 августа",
+        "conditions": "взрослые самцы"
+      }
+    ]
+  },
+  {
+    "name": "Косуля сибирская",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Capreolus pygargus",
+    "ratePerUnit": "450",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 31 декабря"
+      },
+      {
+        "period": "с 25 августа по 20 сентября",
+        "conditions": "взрослые самцы"
+      }
+    ]
+  },
+  {
+    "name": "Лось",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Alces alces",
+    "ratePerUnit": "1500",
+    "productionLimit": "986",
+    "productionIsNotLimited": "false",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 31 декабря"
+      },
+      {
+        "period": "с 1 сентября по 30 сентября",
+        "conditions": "взрослые самцы"
+      },
+      {
+        "period": "с 1 января по 15 января",
+        "conditions": "в возрасте до 1 года"
+      }
+    ]
+  },
+  {
+    "name": "Олень благородный",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Cervus elaphus Linnaeus",
+    "ratePerUnit": "1500",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 31 декабря"
+      },
+      {
+        "period": "с 1 сентября по 30 сентября",
+        "conditions": "взрослые самцы"
+      },
+      {
+        "period": "с 1 июня по 15 июля",
+        "conditions": "взрослые самцы с неокостеневшими рогами (пантами)"
+      }
+    ]
+  },
+  {
+    "name": "Олень пятнистый",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Cervus nippon",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 31 декабря"
+      },
+      {
+        "period": "с 1 сентября по 30 сентября",
+        "conditions": "взрослые самцы"
+      },
+      {
+        "period": "с 1 июня по 15 июля",
+        "conditions": "взрослые самцы с неокостеневшими рогами (пантами)"
+      }
+    ]
+  },
+  {
+    "name": "Лань",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Dama dama",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 31 декабря"
+      },
+      {
+        "period": "с 1 сентября по 30 сентября",
+        "conditions": "взрослые самцы"
+      }
+    ]
+  },
+  {
+    "name": "Овцебык",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Ovibos moschatus",
+    "ratePerUnit": "15000",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 30 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Муфлон",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Ovis musimon",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 15 января"
+      }
+    ]
+  },
+  {
+    "name": "Серна",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Rupicapra rupicapra",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 30 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Сибирский горный козел",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Capra sibirica",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 30 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Туры",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Bos taurus primigenius",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 30 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Снежный баран",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Ovis nivicola",
+    "ratePerUnit": "600",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 30 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Гибрид зубра с бизоном",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Bison bonasus",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 15 января"
+      }
+    ]
+  },
+  {
+    "name": "Гибрид зубра с домашним скотом",
+    "category": "hunting-resources-mammals-hoofed",
+    "latinName": "Bison bonasus",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 15 января"
+      }
+    ]
+  },
+  {
+    "name": "Медведь бурый",
+    "category": "hunting-resources-mammals-bears",
+    "latinName": "Ursus arctos",
+    "ratePerUnit": "3000",
+    "productionLimit": "211",
+    "productionIsNotLimited": "false",
+    "restrictions": [
+      {
+        "period": "с 21 марта по 10 июня",
+        "conditions": "продолжительность не более 60 дней"
+      },
+      {
+        "period": "с 1 августа по 30 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Медведь гималайский (белогрудый)",
+    "category": "hunting-resources-mammals-bears",
+    "latinName": "Ursus thibetanus",
+    "ratePerUnit": "6000",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 августа по 30 ноября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Бурундук",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Tamias",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 31 октября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Суслик-песчаник (желтый)",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus fulvus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 20 марта по 20 мая",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Крот обыкновенный",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Talpa",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июня по 25 октября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Крот сибирский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Talpa altaica",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июня по 25 октября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Крот малый",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Talpa levantis",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июня по 25 октября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Крот кавказский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Talpa caucasica",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июня по 25 октября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Сурок степной",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Marmota bobak",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Сурок серый",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Marmota baibacina",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Сурок камчатский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Marmota camtschatica",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Сурок монгольский (тарбаган)",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Marmota sibirica",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Суслик большой",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus major",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик малый",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Citellus pygmaeus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик забайкальский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus dauricus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик крапчатый",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus suslicus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик краснощёкий",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus erythrogenys",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик длиннохвостый",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus undulatus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик американский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus parryi",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Суслик кавказский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Spermophilus musicus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Хомяки",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Cricetinae",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 июля по 30 сентября",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Заяц-беляк",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Lepus timidus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      },
+      {
+        "period": "с 1 сентября по 14 сентября",
+        "conditions": "Охота с гончими и борзыми собаками, без огнестрельного и (или) пневматического оружия"
+      }
+    ]
+  },
+  {
+    "name": "Заяц-русак",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Lepus europaeus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      },
+      {
+        "period": "с 1 сентября по 14 сентября",
+        "conditions": "Охота с гончими и борзыми собаками, без огнестрельного и (или) пневматического оружия"
+      }
+    ]
+  },
+  {
+    "name": "Заяц-толай",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Lepus tolai",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      },
+      {
+        "period": "с 1 сентября по 14 сентября",
+        "conditions": "Охота с гончими и борзыми собаками, без огнестрельного и (или) пневматического оружия"
+      }
+    ]
+  },
+  {
+    "name": "Заяц маньчжурский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Lepus mandshuricus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      },
+      {
+        "period": "с 1 сентября по 14 сентября",
+        "conditions": "Охота с гончими и борзыми собаками, без огнестрельного и (или) пневматического оружия"
+      }
+    ]
+  },
+  {
+    "name": "Дикий кролик",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Oryctolagus cuniculus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Волк",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "lupus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Шакал",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Canis aureus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Лисица",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Vulpes",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      },
+      {
+        "period": "с 1 сентября по 14 сентября",
+        "conditions": "Охота с гончими и борзыми собаками, без огнестрельного и (или) пневматического оружия"
+      }
+    ]
+  },
+  {
+    "name": "Корсак",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Vulpes corsac",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 сентября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Ондатра",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Ondatra zibethicus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 1 апреля",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Водяная полевка",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Arvicola terrestris",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 1 апреля",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Бобр европейский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Castor fiber",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Бобр канадский",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Castor canadensis",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Выдра",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Lutra lutra",
+    "ratePerUnit": "120",
+    "productionLimit": "62",
+    "productionIsNotLimited": "false",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Колонок",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela sibirica",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Летяга",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Pteromys volans",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Рысь",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Lynx",
+    "ratePerUnit": "450",
+    "productionLimit": "18",
+    "productionIsNotLimited": "false",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Росомаха",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Gulo gulo",
+    "ratePerUnit": "450",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Харза",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Martes flavigula",
+    "ratePerUnit": "100",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Горностай",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela erminea",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Ласка",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela nivalis",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": "Охота осуществляется при помощи самоловов"
+      }
+    ]
+  },
+  {
+    "name": "Енот-полоскун",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Procyon lotor",
+    "ratePerUnit": "30",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Солонгой",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela altaica",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Степной кот",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Felis silvestris lybic",
+    "ratePerUnit": "100",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Камышовый кот",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Felis chau",
+    "ratePerUnit": "100",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Песец",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Alopex lagopus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 октября по 1 апреля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Барсук",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Meles meles",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 августа по 31 октября",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Соболь",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Martes zibellina",
+    "ratePerUnit": "120",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 15 октября по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Норка европейская",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela lutreola",
+    "ratePerUnit": "30",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Норка американская",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Neovison vison",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Белки",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Sciurus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Енотовидная собака",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Nyctereutes procyonoides",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Куница лесная",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Martes martes",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Куница каменная",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Martes foina",
+    "ratePerUnit": "60",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Хорь лесной",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela putorius",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Хорь степной",
+    "category": "hunting-resources-mammals-fur-bearing",
+    "latinName": "Mustela eversmanni",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля",
+        "conditions": ""
+      }
+    ]
+  },
+  {
+    "name": "Улар кавказский",
+    "category": "hunting-resources-birds-mountain-fowl",
+    "latinName": "Tetraogallus caucasicus",
+    "ratePerUnit": "100",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Саджа",
+    "category": "hunting-resources-birds-field-fowl",
+    "latinName": "Syrrhaptes paradoxus",
+    "ratePerUnit": "30",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Перепел",
+    "category": "hunting-resources-birds-field-fowl",
+    "latinName": "Coturnix",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 4 августа",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 5 августа по 31 декабря",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Глухарь",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Tetrao urogallus",
+    "ratePerUnit": "100",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28(29) февраля"
+      }
+    ]
+  },
+  {
+    "name": "Глухарь каменный",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Tetrao parvirostris",
+    "ratePerUnit": "100",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28(29) февраля"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Фазан",
+    "category": "hunting-resources-birds-field-fowl",
+    "latinName": "Phasianus",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Тетерев",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Lyrurus tetrix",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28(29) февраля"
+      }
+    ]
+  },
+  {
+    "name": "Водяной пастушок",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Rallus aquaticus",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Камышница",
+    "category": "hunting-resources-birds-water-fowl",
+    "latinName": "Gallinula chloropus",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Малый погоныш",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Porzana parva",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Погоныш-крошка",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Porzana pusilla",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Погоныш",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Porzana porzana",
+    "ratePerUnit": "20",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Большой погоныш",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Porzana paykullii",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Обыкновенный погоныш",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Porzana porzana",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Дупель",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Gallinago media",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Бекас",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Gallinago gallinago",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Гаршнеп",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Lymnocryptes minimus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Турухтан",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Philomachus pugnax",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Травник",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Tringa totanus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Чибис",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Vanellus vanellus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Тулес",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Pluvialis squatarola",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Хрустан",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Charadrius morinellus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Улит",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Tringa",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Веретенник",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Limosa",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Кроншнепы",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Numenius",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Мородунка",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Xenus cinereus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Камнешарка",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Arenaria interpres",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Коростель",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Crex crex",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Пастушок",
+    "category": "hunting-resources-birds-moor-meadow-fowl",
+    "latinName": "Rallus aquaticus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 10 июля по 24 июля",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями, без охотничьего огнестрельного и (или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 15 ноября",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Утки",
+    "category": "hunting-resources-birds-water-fowl",
+    "latinName": "Anatidae",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Гуси",
+    "category": "hunting-resources-birds-water-fowl",
+    "latinName": "Anser",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 1 августа до начала иных сроков охоты",
+        "conditions": "Охота с собаками охотничьих пород, без охотничьего и(или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Лысуха",
+    "category": "hunting-resources-birds-water-fowl",
+    "latinName": "Fulica atra",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      },
+      {
+        "period": "с третьей субботы августа по 15 ноября"
+      },
+      {
+        "period": "со второй субботы августа по 31 декабря"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 1 августа до начала иных сроков охоты",
+        "conditions": "Охота с собаками охотничьих пород, без охотничьего и(или) пневматического оружия"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Горлица",
+    "category": "hunting-resources-birds-field-fowl",
+    "latinName": "Streptopelia",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Куропатка серая",
+    "category": "hunting-resources-birds-field-fowl",
+    "latinName": "Perdix perdix",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Куропатка бородатая",
+    "category": "hunting-resources-birds-field-fowl",
+    "latinName": "Perdix dauricae",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "со второй субботы августа по 15 ноября"
+      }
+    ]
+  },
+  {
+    "name": "Белая куропатка",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Lagopus lagopus",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28(29) февраля"
+      }
+    ]
+  },
+  {
+    "name": "Тундряная куропатка",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Lagopus muta",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28(29) февраля"
+      }
+    ]
+  },
+  {
+    "name": "Белая куропатка",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Lagopus lagopus",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28 (29) февраля"
+      },
+      {
+        "period": "с третьей субботы августа по 20 апреля"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 5 августа по 31 декабря",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Рябчик",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Bonasa bonasia",
+    "productionIsNotLimited": "true",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 28(29) февраля"
+      }
+    ]
+  },
+  {
+    "name": "Вальдшнеп",
+    "category": "hunting-resources-birds-upland-fowl",
+    "latinName": "Scolopax rusticola",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с третьей субботы августа по 25 (29) февраля"
+      },
+      {
+        "period": "с третьей субботы августа по 31 декабря"
+      },
+      {
+        "period": "с 5 августа по 31 декабря",
+        "conditions": "Охота с островными и континентальными легавыми собаками, ретриверами, спаниелями"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Турпан горбоносый",
+    "category": "hunting-resources-birds",
+    "latinName": "Melanitta deglandi",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с 1 июня по 4 июня"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  },
+  {
+    "name": "Турпан обыкновенный",
+    "category": "hunting-resources-birds",
+    "latinName": "Melanitta fusca",
+    "restrictions": [
+      {
+        "period": "с 1 марта по 16 июня",
+        "conditions": "не более 10 дней"
+      },
+      {
+        "period": "с 1 июня по 4 июня"
+      },
+      {
+        "period": "с 25 июля по 31 декабря",
+        "conditions": "Охота с ловчими птицами"
+      }
+    ]
+  }
+]
