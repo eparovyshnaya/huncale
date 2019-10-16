@@ -13,7 +13,7 @@ version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
-    maven(url = "https://jcenter.bintray.com")
+    jcenter()
     mavenCentral()
     gradlePluginPortal()
 }
@@ -26,8 +26,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("com.googlecode.json-simple:json-simple:1.1.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    //implementation("ru.clever-clover.meta-calendar:meta-calendar:1.0.1")
-    implementation(fileTree("../meta-calendar/build/libs"))
+    implementation("ru.clever-clover.meta-calendar:meta-calendar:1.0.1")
+    //implementation(fileTree("../meta-calendar/build/libs"))
 }
 
 tasks.withType<KotlinCompile> {
