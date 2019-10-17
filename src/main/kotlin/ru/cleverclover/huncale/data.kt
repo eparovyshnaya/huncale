@@ -7,7 +7,7 @@ import ru.cleverclover.metacalendar.Cashed
 import ru.cleverclover.metacalendar.PeriodFromRangeDefinition
 import java.io.InputStreamReader
 
-internal class JsonData {
+internal object Data {
 
     fun targets(): Targets {
         val categories: Categories = categories() ?: return NoTargets()
@@ -15,12 +15,12 @@ internal class JsonData {
     }
 
     private fun categories() =
-            JsonData::class.java.classLoader.getResourceAsStream("data/category.json")?.use {
+            Data::class.java.classLoader.getResourceAsStream("data/category.json")?.use {
                 Categories(JSONParser().parse(InputStreamReader(it)) as JSONArray)
             }
 
     private fun targets(categories: Categories) =
-            JsonData::class.java.classLoader.getResourceAsStream("data/resource.json")?.use {
+            Data::class.java.classLoader.getResourceAsStream("data/resource.json")?.use {
                 Targets(JSONParser().parse(InputStreamReader(it)) as JSONArray, categories)
             }
 }
