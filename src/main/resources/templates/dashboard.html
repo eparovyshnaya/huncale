@@ -1,10 +1,128 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
-    <title>title</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet/less" type="text/css" href="/css/pages/hunting-calendar.less">
+
+    <script type="text/javascript" src="/js/less.min.js" ></script>
+    <script type="text/javascript" src="/js/jquery/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/raphael/raphael-min.js"></script>
+    <script type="text/javascript" src="/js/Descriptor.js"></script>
+    <script type="text/javascript" src="/js/HuntingCalendar.js"></script>
+    <script type="text/javascript" src="/js/HuntingResourceInformer.js"></script>
+
+    <script>
+        $(function () {
+            $('.hide-on-load').hide();
+        });
+    </script>
+
+    <script>
+        var huntingCalendar = null;
+        var informer = null;
+        var descriptor;
+        $(function () {
+            informer = new HuntingResourceInformer('#c-informer-0');
+            $('.resource-list tbody tr').click(function () {
+                var resourceId = this.id.substring(3);
+                if (!huntingCalendar) {
+                    return;
+                }
+                var resData = huntingCalendar.getResourceData(resourceId);
+                resourceSelected(resData);
+            });
+            refreshCalendar(null);
+            descriptor = new Descriptor('#description-0', "${render(template: 'description-base').encodeAsJavaScript()}");
+            var contextDescriptors = {};
+            contextDescriptors['.season-active'] = "${render(template: 'season-list', model:[activeNotGoing:true, amount:active.size()]).encodeAsJavaScript()}";
+            contextDescriptors['.season-starting'] = "${render(template: 'season-list', model:[activeNotGoing:false, amount:goingToStart.size()]).encodeAsJavaScript()}";
+            descriptor.append(contextDescriptors);
+        });
+
+        function resourceSelected(resData) {
+            informer.inplaceResourceData(resData);
+        }
+
+        function refreshCalendar(timeMachine) {
+            $.ajax({
+                url: "calendarDataAjax",
+                data: timeMachine,
+                success: function (data) {
+                    $('#calendar-0').find('svg').remove();
+                    var progress = $('#progress-0');
+                    progress.show();
+                    huntingCalendar = new HuntingCalendar(data, 'calendar-0', refreshCalendar, resourceSelected);
+                    progress.hide();
+                    var contextDescriptors = {};
+                    contextDescriptors['.month'] = "${render(template: 'calendar-month-scale').encodeAsJavaScript()}";
+                    contextDescriptors['.needle'] = "${render(template: 'calendar-needle').encodeAsJavaScript()}";
+                    contextDescriptors['.category-marker'] = "${render(template: 'calendar-category-marker').encodeAsJavaScript()}";
+                    contextDescriptors['.catalog-letter'] = "${render(template: 'calendar-catalog-letter').encodeAsJavaScript()}";
+                    contextDescriptors['.beacon-bound, .beacon-bound-text, .time-machine-arm'] = "${render(template: 'calendar-time-machine').encodeAsJavaScript()}";
+                    contextDescriptors['.beacon-now, .beacon-now-text'] = "${render(template: 'calendar-beacon-now').encodeAsJavaScript()}";
+                    descriptor.append(contextDescriptors);
+                }
+            });
+        }
+    </script>
+    <title></title>
 </head>
+
 <body>
-<p th:text="'And... ' + ${hi} + '!'"></p>
+<h2>Календарь Охотника</h2>
+
+<div class="row">
+    <div class="col-xs-3 col-md-3 col-lg-2">
+        <div id='c-informer-0' class="resource-info-left"><g:render template="resource-info"/></div>
+    </div>
+
+    <div class="col-xs-7 col-md-7 col-lg-4 resource-list">
+        <div class="season-active">
+            <g:set var="actives" value="${active.size()}"/>
+            <g:if test="${actives}">
+                <div>
+                    <p class="section-title">В настоящее время охота разрешена на ${LangUtil.species(actives)}</p>
+                    <g:render template="resource-list"
+                              model="[direction: 'end', labelLeft: 'Остаток сезона', list: active]"/>
+                </div>
+            </g:if>
+            <g:else>
+                <p>
+                    В настоящее время охота запрещена
+                </p>
+            </g:else>
+        </div>
+
+        <g:set var="starting" value="${goingToStart.size()}"/>
+
+        <div class="season-starting">
+            <g:if test="${starting}">
+                <div>
+                    <p class="section-title">В ближайшие ${LangUtil.day(shortcutScope)} начнутся сезоны охоты на ${LangUtil.species(starting)}</p>
+                    <g:render template="resource-list"
+                              model="[direction: 'start', labelLeft: 'Осталось', list: goingToStart]"/>
+                </div>
+            </g:if>
+            <g:else>
+                <p class="section-title">В ближайшие ${LangUtil.day(shortcutScope)} ни один сезон охоты не откроется</p>
+            </g:else>
+        </div>
+    </div>
+
+    <div class="col-xs-offset-3 col-xs-7 col-md-offset-3 col-md-7 col-lg-offset-0 col-lg-4">
+        <div id='progress-0' class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
+        </div>
+
+        <div id="calendar-0"></div>
+    </div>
+
+    <div class="col-xs-3 col-md-3 col-lg-2">
+        <div id="description-0" class="importunate-descriptor"></div>
+    </div>
+</div>
+
 </body>
 </html>

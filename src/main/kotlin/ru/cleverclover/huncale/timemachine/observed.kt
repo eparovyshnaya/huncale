@@ -42,12 +42,12 @@ internal class Beacons(private val observatory: Observatory) {
 
     private fun now() = JSONObject().apply {
         val now = LocalDate.now()
-        put("offset", ChronoUnit.DAYS.between(LocalDate.now(), observatory.scope.from) + 1)
+        put("offset", ChronoUnit.DAYS.between(observatory.scope.from, LocalDate.now()) + 1)
         put("label", DateText.label(now).get())
     }
 
     private fun bound(date: LocalDate, alter: Alter) = JSONObject().apply {
-        put("label", DateText.label(date))
+        put("label", DateText.label(date).get())
         put("canMoveToNow", alter.narrow)
         put("canMoveFromNow", alter.wide)
     }
