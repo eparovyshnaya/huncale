@@ -1,6 +1,5 @@
 package ru.cleverclover.huncale.timemachine
 
-import org.json.simple.JSONObject
 import ru.cleverclover.metacalendar.Cashed
 import java.time.LocalDate
 import java.time.Month
@@ -15,41 +14,38 @@ internal object DateText {
 }
 
 internal class TimeLine(private val scope: ObservationPeriod) {
-    fun data() = JSONObject().apply {
-        scope.years().forEach { this[it] = yearData(it) }
-    }
+    fun data() = scope.years().associateWith { yearData(it) }
 
-    private fun yearData(year: Int) = JSONObject().apply {
-        scope.months(year).forEach { this[it] = monthData(year, it) }
-    }
+    private fun yearData(year: Int) = scope.months(year).associateWith { monthData(year, it) }
 
-    private fun monthData(year: Int, month: Int) = JSONObject().apply {
-        put("minInScope", scope.monthStart(year, month))
-        put("maxInScope", scope.monthEnd(year, month))
-        put("name", Month.of(month).name)
-    }
+    private fun monthData(year: Int, month: Int) = mapOf(
+            "minInScope" to scope.monthStart(year, month),
+            "maxInScope" to scope.monthEnd(year, month),
+            "name" to Month.of(month).name)
 }
 
 internal class Beacons(private val observatory: Observatory) {
-    fun data() = JSONObject().apply {
-        put("now", now())
-        put("start", bound(observatory.scope.from, observatory.past))
-        put("end", bound(observatory.scope.to, observatory.future))
-        put("distance", observatory.scope.length())
-        put("maxScope", 300) // todo:constant somehow
-        put("moveStepLabel", "28 дней")  //lc.itgroup.hunta.HuntingCalendarController#composeBeacons
+    fun data() = mapOf(
+            "now" to now(),
+            "start" to bound(observatory.scope.from, observatory.past),
+            "end" to bound(observatory.scope.to, observatory.future),
+            "distance" to observatory.scope.length(),
+            "maxScope" to 300, // todo:constant somehow
+            "moveStepLabel" to "28 дней")  //lc.itgroup.hunta.HuntingCalendarController#composeBeacons
+
+
+    private fun now() = with(LocalDate.now()) {
+        mapOf("offset" to ChronoUnit.DAYS.between(observatory.scope.from, this) + 1,
+                "label" to DateText.label(this).get())
     }
 
-    private fun now() = JSONObject().apply {
-        val now = LocalDate.now()
-        put("offset", ChronoUnit.DAYS.between(observatory.scope.from, LocalDate.now()) + 1)
-        put("label", DateText.label(now).get())
-    }
+    private fun bound(date: LocalDate, alter: Alter) = mapOf(
+            "label" to DateText.label(date).get(),
+            "canMoveToNow" to alter.narrow,
+            "canMoveFromNow" to alter.wide)
+}
 
-    private fun bound(date: LocalDate, alter: Alter) = JSONObject().apply {
-        put("label", DateText.label(date).get())
-        put("canMoveToNow", alter.narrow)
-        put("canMoveFromNow", alter.wide)
-    }
+internal class Resources(){
+    //fun data() =
 }
 
