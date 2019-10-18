@@ -6,6 +6,7 @@ import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
+import ru.cleverclover.huncale.timemachine.Beacons
 import ru.cleverclover.huncale.timemachine.ObservatoryConfig
 import ru.cleverclover.huncale.timemachine.TimeLine
 
@@ -23,6 +24,7 @@ class AskMe {
     @ResponseBody
     fun calendarData(@RequestParam params: Map<String, Any>) = JSONObject().apply {
         val observatory = ObservatoryConfig(params).observatory()
-        put("years", TimeLine(observatory.scope).yearsData())
+        put("years", TimeLine(observatory.scope).data())
+        put("beacons", Beacons(observatory).data())
     }
 }

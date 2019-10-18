@@ -1,8 +1,13 @@
 package ru.cleverclover.huncale.timemachine
 
-import org.omg.CORBA.Object
+import java.text.SimpleDateFormat
 
-// dto ->
+// input dto
 internal class ObservatoryConfig(private val timeMachine: Map<String, Any>) {
-    fun observatory() = Observatory() // todo: read params
+    private val date = SimpleDateFormat("dd.MM.yyyy")
+    fun observatory(): Observatory {
+        // todo: implementation lc.itgroup.hunta.HuntingCalendarController#prepareObservationPeriod
+        return Observatory() // todo: read timeMachine params: date-formatted {timestampStart, timestampEnd} and booleans {moveStart, moveEnd}
+    }
 }
+
