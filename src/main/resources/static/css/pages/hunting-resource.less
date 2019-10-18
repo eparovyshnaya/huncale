@@ -1,0 +1,201 @@
+@import "hunting-commons";
+
+@color-unlimited: #c2d467;
+@color-limited: #edea59;
+@color-prohibited: #faf7f1;
+@color-selected: #fa95a2;
+
+.season-unlimited {
+  @clr: @color-unlimited;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.season-limited {
+  @clr: @color-limited;
+  background-color: @clr;
+  border-color: @clr;
+}
+.season-prohibited {
+  @clr: @color-prohibited;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+@color-category-fur-bearing: #c9a86a;
+@color-category-hoofed : #d8adc6;
+@color-category-bears : #cb6143;
+@color-category-birds-water-fowl : #29c1c4;
+@color-category-birds-upland-fowl : #ccb418;
+@color-category-birds-field-fowl : #99bcd1;
+@color-category-birds-mountain-fowl : #9188c9;
+@color-category-birds-vital-fowl : #b8ccc6;
+@color-category-birds-moor-meadow-fowl : #efb97f;
+
+.category {
+  stroke-width: 0;
+  color: #fff;
+  font-size: 70%;
+}
+
+.category-hunting-resources-mammals-fur-bearing {
+  .category;
+  @clr: @color-category-fur-bearing;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-mammals-hoofed {
+  .category;
+  @clr: @color-category-hoofed;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-mammals-bears {
+  .category;
+  @clr: @color-category-bears;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-birds-upland-fowl {
+  .category;
+
+  @clr: @color-category-birds-upland-fowl;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-birds-water-fowl {
+  .category;
+  @clr: @color-category-birds-water-fowl;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-birds-field-fowl {
+  .category;
+  @clr: @color-category-birds-field-fowl;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-birds-moor-meadow-fowl {
+  .category;
+  @clr: @color-category-birds-moor-meadow-fowl;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.category-hunting-resources-birds-mountain-fowl {
+  .category;
+  @clr: @color-category-birds-mountain-fowl;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+
+}
+
+.category-hunting-resources-birds-vital-fowl {
+  .category;
+  @clr: @color-category-birds-vital-fowl;
+  fill: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.resource-list {
+  font-size: 12px;
+  margin-bottom: 20px;
+  @section-title-color-fg: #797979;
+  @section-title-color-seq: lighten(@section-title-color-fg, 12%);
+  @section-title-color-br: lighten(@section-title-color-fg, 40%);
+
+  p.section-title {
+    font-size: 160%;
+    text-align: center;
+    font-family: "Calibri";
+    font-style: italic;
+    color: @section-title-color-fg;
+    padding: 4px 0;
+    border-bottom: 1px @section-title-color-br solid;
+    border-top: 1px @section-title-color-br solid;
+    margin: 0;
+  }
+
+  table {
+    width: 100%;
+    font-size: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+
+    th {
+      font-size: 70%;
+      text-align: center;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: @section-title-color-seq;
+    }
+
+    tbody {
+
+      tr:hover {
+        background-color: lighten(desaturate(@color-selected, 22%), 20%);
+        cursor: pointer;
+      }
+
+      td.category-name {
+        .subtext;
+        text-align: center;
+      }
+
+      td.resource-name {
+        padding-left: 7px;
+        text-align: left;
+      }
+
+      td.season-under-condition {
+        .subtext;
+      }
+
+      td.season-is-not-under-condition {
+        .subtext;
+        color: #808080;
+      }
+
+      td.cell-color-sample {
+        width: 8px;
+        border-radius: 3px;
+        border-bottom: none;
+      }
+
+      td {
+        border: none;
+        padding: 4px;
+        letter-spacing: 0.7;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px #f4f4f4 solid;
+      }
+    }
+  }
+  .season-starting {
+    margin-top: 30px;
+  }
+}
+
+.addition {
+  font-size: 80%;
+  font-weight: normal;
+  font-style: italic;
+  color: #838383;
+}

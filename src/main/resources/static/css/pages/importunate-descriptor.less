@@ -1,0 +1,65 @@
+@import "hunting-commons";
+
+@importunate-descriptor-color-bg: rgba(255, 255, 255, 0.7);
+@importunate-descriptor-color-fg: #cccccc;
+@importunate-descriptor-color-border: lighten(@importunate-descriptor-color-fg, 12%);
+@importunate-descriptor-color-sample-border: #b3a9a5;
+.importunate-descriptor {
+  font-family: "Calibri";
+  font-size: 100%;
+  text-align: left;
+
+  position: fixed;
+  top: 155px;
+  right: 15px;
+  z-index: 15;
+  width: 250px;
+  padding: 10px;
+
+  color: @importunate-descriptor-color-fg;
+
+  border: 1px @importunate-descriptor-color-border solid;
+  border-radius: 3px;
+
+  background-color: @importunate-descriptor-color-bg;
+  border-left-width: @border-mark-width;
+  p {
+    padding: 0;
+  }
+
+  p.common-info {
+
+  }
+
+  p.subsection-description {
+    font-style: italic;
+    padding-top: 10px;
+  }
+
+  table {
+    color: darken(@importunate-descriptor-color-fg, 10%);
+
+    text-align: right;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+
+    img.color-sample-img {
+      border-radius: 3px;
+      border: 1px @importunate-descriptor-color-sample-border solid;
+    }
+
+    td.color-sample {
+      width: 20px;
+      border-radius: 3px;
+    }
+    td.color-descriptor {
+      .subtext;
+      padding: 0 10px;
+    }
+  }
+
+  ul{
+    //list-style-image: url("../../images/green-mark-7.png");
+  }
+}

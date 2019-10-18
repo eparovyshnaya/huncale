@@ -1,0 +1,195 @@
+@import "hunting-informer";
+@import "importunate-descriptor";
+
+.month-1-bg {
+  @clr: #7c808f;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-2-bg {
+  @clr: #ac9fa4;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-3-bg {
+  @clr: #7fc680;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-4-bg {
+  @clr: #54ba52;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-5-bg {
+  @clr: #fda219;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-6-bg {
+  @clr: #f65e51;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-7-bg {
+  @clr: #d43e55;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-8-bg {
+  @clr: #e46e20;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-9-bg {
+  @clr: #d4ac73;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-10-bg {
+  @clr: #bbb8a4;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-11-bg {
+  @clr: #8dbbab;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+.month-12-bg {
+  @clr: #56a2bb;
+  fill: @clr;
+  stroke: @clr;
+  background-color: @clr;
+  border-color: @clr;
+}
+
+#calendar-0 {
+  margin: 5px 10px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.namer {
+  fill: #eed22c;
+  stroke: none;
+}
+
+.naming-text {
+  stroke-width: 1;
+}
+
+.restriction {
+  stroke: none;
+}
+
+.restriction-unlimited {
+  .restriction;
+  fill: @color-unlimited;
+}
+
+.restriction-limited {
+  .restriction;
+  fill: @color-limited;
+}
+
+.restriction-prohibited {
+  fill: @color-prohibited;
+  stroke: @color-prohibited;
+}
+
+.needle {
+  fill: transparent;
+  stroke-width: 0;
+  stroke: @color-selected;
+}
+
+@color-beacon-now: #dc4563;
+@color-beacon-bound: #d1913a;
+@color-time-machine-arm: #5c8944;
+
+.beacon {
+  stroke-width: 0;
+  stroke: none;
+}
+
+.beacon-now {
+  .beacon;
+  fill: @color-beacon-now;
+  color: desaturate(@color-beacon-now, 35%);
+  font-style: italic;
+}
+
+.beacon-now:hover {
+  fill: saturate(@color-beacon-now, 25%);
+}
+
+.beacon-now-line {
+  stroke-dasharray: 40 5 1 5;
+  stroke: @color-selected;
+}
+
+.beacon-bound {
+  .beacon;
+  fill: #dc993d;
+}
+
+.beacon-bound:hover {
+  fill: saturate(@color-beacon-bound, 25%);
+}
+
+.time-machine-arm {
+  stroke-width: 0;
+  fill: @color-time-machine-arm;
+}
+
+.time-machine-arm:hover {
+  stroke-width: 0;
+  fill: saturate(@color-time-machine-arm, 25%);
+}
+
+#progress-0 {
+  margin: 200px 40px 0 40px;
+}
+
+.resource-list {
+  tbody {
+    td.days-left-red-zone {
+      color: #ac6055;
+      font-weight: bold;
+    }
+  }
+}
