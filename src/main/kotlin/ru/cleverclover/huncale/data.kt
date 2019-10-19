@@ -71,7 +71,6 @@ internal class Restriction(private val source: JSONObject) {
 
     fun period() = period.get()
 
-    fun condition() = source["conditions"]
     fun conditional() = source.containsKey("conditions")
 
 }
