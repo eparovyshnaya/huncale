@@ -5,6 +5,7 @@ import org.json.simple.JSONObject
 import org.json.simple.parser.JSONParser
 import ru.cleverclover.metacalendar.Cashed
 import ru.cleverclover.metacalendar.PeriodFromRangeDefinition
+import ru.cleverclover.metacalendar.period
 import java.io.InputStreamReader
 
 internal object Data {
@@ -45,7 +46,7 @@ internal open class Targets(source: JSONArray, val categories: Categories) {
         }
     }
 
-    fun targets() = targets.get()
+    fun get() = targets.get()
 }
 
 internal class NoTargets : Targets(JSONArray(), Categories(JSONArray()))
@@ -61,7 +62,16 @@ internal class Target(private val source: JSONObject, private val categoryFromSo
     fun category() = categoryFromSource(source)
 }
 
-internal class Restriction(source: JSONObject) {
-    private val period = Cashed(source) { obj -> PeriodFromRangeDefinition(obj["period"] as String) }
+internal class Restriction(private val source: JSONObject) {
+    private val period = Cashed(source) { obj ->
+        PeriodFromRangeDefinition(obj["period"] as String)
+                .bounds()
+                .period(source["conditions"])
+    }
+
     fun period() = period.get()
+
+    fun condition() = source["conditions"]
+    fun conditional() = source.containsKey("conditions")
+
 }

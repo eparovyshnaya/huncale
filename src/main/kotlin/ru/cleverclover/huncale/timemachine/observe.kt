@@ -35,6 +35,9 @@ internal data class ObservationPeriod(val from: LocalDate, val to: LocalDate) {
             else Month.of(month).length(Year.of(year).isLeap)
 
     fun length() = ChronoUnit.DAYS.between(from, to)
+
+    fun intersects(start: LocalDate, end: LocalDate) = (from <= end) && (to >= start)
+
 }
 
 internal data class Alter(val wide: Boolean, val narrow: Boolean) {
