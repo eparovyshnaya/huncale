@@ -27,6 +27,12 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     //implementation("ru.clever-clover.meta-calendar:meta-calendar:1.0.1")
     implementation(fileTree("../meta-calendar/build/libs"))
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.5.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.5.1")
+    testImplementation("org.junit.platform:junit-platform-engine:1.5.2")
+    testImplementation("org.junit.platform:junit-platform-commons:1.5.2")
 }
 
 tasks.withType<KotlinCompile> {
@@ -36,16 +42,10 @@ tasks.withType<KotlinCompile> {
     }
 }
 
-/*
 tasks.test {
-    outputs.dir(snippetsDir)
+    useJUnitPlatform()
 }
 
-tasks.asciidoctor {
-    inputs.dir(snippetsDir)
-    dependsOn(test)
-}
-*/
 group = "ru.clever-clover.calendar"
 version = "1.0-SNAPSHOT"
 
