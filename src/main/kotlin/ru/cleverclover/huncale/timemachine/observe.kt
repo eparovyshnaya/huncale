@@ -10,7 +10,7 @@ internal data class Observatory(val scope: ObservationPeriod, val past: Alter, v
 }
 
 internal data class ObservedDays(val before: Long, val after: Long) {
-    constructor() : this(21, 90)
+    constructor() : this(21, 180)
 }
 
 // todo: do smth with it

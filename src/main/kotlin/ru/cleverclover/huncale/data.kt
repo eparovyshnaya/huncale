@@ -70,7 +70,4 @@ internal class Restriction(private val source: JSONObject) {
     }
 
     fun period() = period.get()
-
-    fun conditional() = source.containsKey("conditions")
-
 }
