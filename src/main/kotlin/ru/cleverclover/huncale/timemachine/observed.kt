@@ -57,14 +57,17 @@ internal class Beacons(private val observatory: Observatory) {
 internal class Resources(private val targets: Targets, private val scope: ObservationPeriod) {
     fun data() = targets.get().associateBy({ it.name() }, { targetData(it) }).toMap(TreeMap())
 
-    private fun targetData(target: Target) = mapOf(
-            "id" to target.latin(),
-            "name" to target.name(),
-            "latinName" to target.latin(),
-            "category" to target.category().name(),
-            "categoryId" to target.category().id(),
-            "restrictions" to restrictionsData(target),
-            "inScope" to true) // todo
+    private fun targetData(target: Target): Map<String, Any?> {
+        val restrictionsData = restrictionsData(target)
+        return mapOf(
+                "id" to target.latin(),
+                "name" to target.name(),
+                "latinName" to target.latin(),
+                "category" to target.category().name(),
+                "categoryId" to target.category().id(),
+                "restrictions" to restrictionsData,
+                "inScope" to restrictionsData.any { it["inScope"] as Boolean })
+    }
 
     private fun restrictionsData(target: Target) =
             with(MetaCalendar(target.restrictions().map { it.period() })) {
@@ -85,7 +88,7 @@ internal class Resources(private val targets: Targets, private val scope: Observ
                         "по ${DateText.label(period.to).get()} " +
                         ": ${period.note ?: " Все половозрастные группы"}",
                 "limited" to (period.note != null),
-                "inScope" to scoped, // todo:
+                "inScope" to scoped, // todo: Refactor in synch with js. Or not.
                 "startsAt" to if (scoped) ChronoUnit.DAYS.between(scope.from, start.get()) else null,
                 "lasts" to if (scoped) ChronoUnit.DAYS.between(start.get(), end.get()) + 1 else null
         )
