@@ -13,9 +13,9 @@ internal data class ObservedDays(val before: Long, val after: Long) {
     constructor() : this(21, 180)
 }
 
-// todo: do smth with it
 internal data class ObservationPeriod(val from: LocalDate, val to: LocalDate) {
-    constructor() : this(LocalDate.now().minusDays(ObservedDays().before),
+    constructor() : this(
+            LocalDate.now().minusDays(ObservedDays().before),
             LocalDate.now().plusDays(ObservedDays().after))
 
     fun years() = (from.year..to.year).asSequence()
@@ -27,17 +27,16 @@ internal data class ObservationPeriod(val from: LocalDate, val to: LocalDate) {
     }
 
     fun monthStart(year: Int, month: Int) =
-            if (year == from.year && month == from.monthValue) from.dayOfMonth
+            if ((year == from.year) && (month == from.monthValue)) from.dayOfMonth
             else 1
 
     fun monthEnd(year: Int, month: Int) =
-            if (year == to.year && month == to.monthValue) to.dayOfMonth
+            if ((year == to.year) && (month == to.monthValue)) to.dayOfMonth
             else Month.of(month).length(Year.of(year).isLeap)
 
-    fun length() = ChronoUnit.DAYS.between(from, to)
+    fun length() = ChronoUnit.DAYS.between(from, to) + 1
 
     fun intersects(start: LocalDate, end: LocalDate) = (from <= end) && (to >= start)
-
 }
 
 internal data class Alter(val wide: Boolean, val narrow: Boolean) {

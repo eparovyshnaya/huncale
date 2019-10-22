@@ -67,8 +67,9 @@ class ObservationPeriodTest {
 
     @Test
     fun length() {
-        assertEquals(plainPeriod().length(), 69)
-        assertEquals(crossYearPeriod().length(), 90)
+        assertEquals(singleDayPeriod().length(), 1)
+        assertEquals(plainPeriod().length(), 70)
+        assertEquals(crossYearPeriod().length(), 91)
     }
 
     @ParameterizedTest
@@ -125,10 +126,14 @@ class ObservationPeriodTest {
                 Pair(to, to.plusDays(10)))
                 .asStream()
     }
+
+    private fun singleDayPeriod() = ObservationPeriod(
+            LocalDate.of(2019, Month.FEBRUARY, 1),
+            LocalDate.of(2019, Month.FEBRUARY, 1))
+
     private fun plainPeriod() = ObservationPeriod(
             LocalDate.of(2019, Month.FEBRUARY, 2),
             LocalDate.of(2019, Month.APRIL, 12))
-
 
     private fun crossYearPeriod() = ObservationPeriod(
             LocalDate.of(2019, Month.DECEMBER, 2),
