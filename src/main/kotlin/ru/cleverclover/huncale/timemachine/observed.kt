@@ -1,7 +1,7 @@
 package ru.cleverclover.huncale.timemachine
 
-import ru.cleverclover.huncale.Targets
 import ru.cleverclover.huncale.Target
+import ru.cleverclover.huncale.Targets
 import ru.cleverclover.metacalendar.Cashed
 import ru.cleverclover.metacalendar.MetaCalendar
 import ru.cleverclover.metacalendar.NotedResolvedPeriod
@@ -12,7 +12,6 @@ import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
 import java.util.*
-import java.util.Collections.max
 
 // output dto
 internal object DateText {
@@ -55,7 +54,10 @@ internal class Beacons(private val observatory: Observatory) {
 }
 
 internal class Resources(private val targets: Targets, private val scope: ObservationPeriod) {
-    fun data() = targets.get().associateBy({ it.name() }, { targetData(it) }).toMap(TreeMap())
+    private val data = Cashed(targets) { targets.get().associateBy({ it.name() }, { targetData(it) }).toMap(TreeMap()) }
+    fun data() = data.get()
+
+    fun inScope() = data().count { (_, resource) -> resource["inScope"] as Boolean}
 
     private fun targetData(target: Target): Map<String, Any?> {
         val restrictionsData = restrictionsData(target)
@@ -66,7 +68,8 @@ internal class Resources(private val targets: Targets, private val scope: Observ
                 "category" to target.category().name(),
                 "categoryId" to target.category().id(),
                 "restrictions" to restrictionsData,
-                "inScope" to restrictionsData.any { it["inScope"] as Boolean })
+                "inScope" to restrictionsData.any { it["inScope"] as Boolean }
+        )
     }
 
     private fun restrictionsData(target: Target) =

@@ -23,10 +23,11 @@ class AskMe {
     @GetMapping("/calendarDataAjax")
     @ResponseBody
     fun calendarData(@RequestParam params: Map<String, Any>) = with(ObservatoryConfig(params).observatory()) {
+        val resources = Resources(Data.targets(), scope)
         mapOf("years" to TimeLine(scope).data(),
                 "beacons" to Beacons(this).data(),
-                "resources" to Resources(Data.targets(), scope).data()
-
+                "resources" to resources.data(),
+                "resourcesInScope" to resources.inScope()
         )
     }
 
