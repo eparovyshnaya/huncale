@@ -1,7 +1,6 @@
 package ru.cleverclover.huncale.timemachine
 
 import ru.cleverclover.metacalendar.Cashed
-import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
 
