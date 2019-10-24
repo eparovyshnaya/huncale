@@ -17,12 +17,12 @@ internal object Data {
 
     private fun categories() =
             Data::class.java.classLoader.getResourceAsStream("data/category.json")?.use {
-                Categories(JSONParser().parse(InputStreamReader(it)) as JSONArray)
+                Categories(JSONParser().parse(InputStreamReader(it, "UTF-8")) as JSONArray)
             }
 
     private fun targets(categories: Categories) =
             Data::class.java.classLoader.getResourceAsStream("data/resource.json")?.use {
-                Targets(JSONParser().parse(InputStreamReader(it)) as JSONArray, categories)
+                Targets(JSONParser().parse(InputStreamReader(it, "UTF-8")) as JSONArray, categories)
             }
 }
 
