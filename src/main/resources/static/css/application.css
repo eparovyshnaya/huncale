@@ -1,0 +1,15 @@
+/*
+*= require_self
+*= require bootstrap/bootstrap
+*= require html5-boilerplate
+*= require media-queries
+*= require bootstrap-derived
+*/
+
+.a-tool {
+    cursor: pointer;
+}
+
+h2, h3{
+    text-align: center;
+}
