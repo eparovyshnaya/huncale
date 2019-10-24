@@ -8,18 +8,10 @@ import ru.cleverclover.metacalendar.NotedResolvedPeriod
 import java.time.LocalDate
 import java.time.Month
 import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
 import java.util.*
 
 // output dto
-internal object DateText {
-    private val labelFormat = DateTimeFormatter.ofPattern("dd.MM.yyyy")
-
-    fun label(date: LocalDate) = Cashed(date) { labelFormat.format(it) }
-    fun label(date: ZonedDateTime) = Cashed(date) { labelFormat.format(it) }
-}
 
 internal class TimeLine(private val scope: ObservationPeriod) {
     fun data() = scope.years().associateWith { yearData(it) }
@@ -44,20 +36,20 @@ internal class Beacons(private val observatory: Observatory) {
 
     private fun now() = with(LocalDate.now()) {
         mapOf("offset" to ChronoUnit.DAYS.between(observatory.scope.from, this) + 1,
-                "label" to DateText.label(this).get())
+                "label" to DateText.label(this))
     }
 
-    private fun bound(date: LocalDate, alter: Alter) = mapOf(
-            "label" to DateText.label(date).get(),
-            "canMoveToNow" to alter.narrow,
-            "canMoveFromNow" to alter.wide)
+    private fun bound(date: LocalDate, alterable: Alterable) = mapOf(
+            "label" to DateText.label(date),
+            "canMoveToNow" to alterable.narrow,
+            "canMoveFromNow" to alterable.wide)
 }
 
 internal class Resources(private val targets: Targets, private val scope: ObservationPeriod) {
     private val data = Cashed(targets) { targets.get().associateBy({ it.name() }, { targetData(it) }).toMap(TreeMap()) }
     fun data() = data.get()
 
-    fun inScope() = data().count { (_, resource) -> resource["inScope"] as Boolean}
+    fun inScope() = data().count { (_, resource) -> resource["inScope"] as Boolean }
 
     private fun targetData(target: Target): Map<String, Any?> {
         val restrictionsData = restrictionsData(target)
@@ -87,8 +79,8 @@ internal class Resources(private val targets: Targets, private val scope: Observ
         val start = Cashed(period) { Max(period.from.toLocalDate(), scope.from).get() }
         val end = Cashed(period) { Min(period.to.toLocalDate(), scope.to).get() }
         return mapOf(
-                "condition" to "с ${DateText.label(period.from).get()} " +
-                        "по ${DateText.label(period.to).get()} " +
+                "condition" to "с ${DateText.label(period.from)} " +
+                        "по ${DateText.label(period.to)} " +
                         ": ${period.note ?: " Все половозрастные группы"}",
                 "limited" to (period.note != null),
                 "inScope" to scoped, // todo: Refactor in synch with js. Or not.
