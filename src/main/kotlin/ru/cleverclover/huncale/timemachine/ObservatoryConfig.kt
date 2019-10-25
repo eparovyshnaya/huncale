@@ -9,8 +9,8 @@ internal class ObservatoryConfig(private val timeMachine: Map<String, Any>) {
     private val step = 28L
     private val envelope = Cashed(3L) { with(LocalDate.now()) { Pair(minusDays(it), plusDays(it)) } }
     private val direction = Cashed(null) {
-        val leftBeacon = timeMachine["moveStart"] as Boolean
-        val direction = if (timeMachine["moveBack"] as Boolean) 1 else -1
+        val leftBeacon = (timeMachine["moveStart"] as String).toBoolean()
+        val direction = if ((timeMachine["moveBack"] as String).toBoolean()) -1 else 1
         Pair(
                 if (leftBeacon) direction else 0,
                 if (leftBeacon) 0 else direction)
