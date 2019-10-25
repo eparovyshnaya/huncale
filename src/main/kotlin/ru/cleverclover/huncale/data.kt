@@ -10,20 +10,19 @@ import java.io.InputStreamReader
 
 internal object Data {
 
-    fun targets(): Targets {
-        val categories: Categories = categories() ?: return NoTargets()
-        return targets(categories) ?: return NoTargets()
+    private val categories = Cashed("data/category.json") { source ->
+        Data::class.java.classLoader.getResourceAsStream(source).use {
+            Categories(JSONParser().parse(InputStreamReader(it!!, "UTF-8")) as JSONArray)
+        }
+    }
+    private val targets = Cashed("data/resource.json") { source ->
+        Data::class.java.classLoader.getResourceAsStream(source).use {
+            Targets(JSONParser().parse(InputStreamReader(it!!, "UTF-8")) as JSONArray, categories())
+        }
     }
 
-    private fun categories() =
-            Data::class.java.classLoader.getResourceAsStream("data/category.json")?.use {
-                Categories(JSONParser().parse(InputStreamReader(it, "UTF-8")) as JSONArray)
-            }
-
-    private fun targets(categories: Categories) =
-            Data::class.java.classLoader.getResourceAsStream("data/resource.json")?.use {
-                Targets(JSONParser().parse(InputStreamReader(it, "UTF-8")) as JSONArray, categories)
-            }
+    fun targets() = targets.get()
+    fun categories() = categories.get()
 }
 
 internal class Categories(source: JSONArray) {
@@ -39,7 +38,7 @@ internal class Category(private val source: JSONObject) {
 
 }
 
-internal open class Targets(source: JSONArray, val categories: Categories) {
+internal open class Targets(source: JSONArray, categories: Categories) {
     private val targets = Cashed(source) { array ->
         array.map {
             Target(it as JSONObject) { obj -> categories.byId(obj["category"] as String)!! }
