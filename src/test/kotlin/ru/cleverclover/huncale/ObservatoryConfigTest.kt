@@ -9,6 +9,7 @@ import ru.cleverclover.huncale.timemachine.ObservationPeriod
 import ru.cleverclover.huncale.timemachine.ObservatoryConfig
 import java.time.LocalDate
 
+// todo: refactor to avoid boilerplate
 class ObservatoryConfigTest {
     @Test
     @DisplayName("Default observatory allows all movements")
