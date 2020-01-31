@@ -6,7 +6,7 @@
 
 
 # huncale
-Nice-toy-project utilizing meta-calendar
+Cute toy-project utilizing meta-calendar
 
 
 ![](/screens/huncale-shot.png "Hunting Calendar")
