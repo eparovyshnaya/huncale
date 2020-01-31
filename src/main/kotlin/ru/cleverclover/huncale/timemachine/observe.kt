@@ -18,14 +18,19 @@ import java.time.Year
 import java.time.temporal.ChronoUnit
 
 internal data class Observatory(val scope: ObservationPeriod, val past: Alterable, val future: Alterable) {
+
     constructor() : this(ObservationPeriod(), Alterable(), Alterable())
+
 }
 
 internal data class ObservedDays(val before: Long, val after: Long) {
+
     constructor() : this(21, 180)
+
 }
 
 internal data class ObservationPeriod(val from: LocalDate, val to: LocalDate) {
+
     constructor() : this(
             LocalDate.now().minusDays(ObservedDays().before),
             LocalDate.now().plusDays(ObservedDays().after))
@@ -49,8 +54,11 @@ internal data class ObservationPeriod(val from: LocalDate, val to: LocalDate) {
     fun length() = ChronoUnit.DAYS.between(from, to) + 1
 
     fun intersects(start: LocalDate, end: LocalDate) = (from <= end) && (to >= start)
+
 }
 
 internal data class Alterable(val wide: Boolean, val narrow: Boolean) {
+
     constructor() : this(true, true)
+
 }

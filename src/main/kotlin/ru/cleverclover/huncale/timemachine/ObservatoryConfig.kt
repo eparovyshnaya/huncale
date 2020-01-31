@@ -18,6 +18,7 @@ import java.time.temporal.ChronoUnit
 
 // input dto
 internal class ObservatoryConfig(private val timeMachine: Map<String, Any>) {
+
     private val step = 28L
     private val envelope = Cashed(3L) { with(LocalDate.now()) { Pair(minusDays(it), plusDays(it)) } }
     private val direction = Cashed(null) {
@@ -59,4 +60,5 @@ internal class ObservatoryConfig(private val timeMachine: Map<String, Any>) {
     private fun canNarrowRight(period: ObservationPeriod) = period.to > envelope.get().second
 
     private fun canNarrowLeft(period: ObservationPeriod) = period.from < envelope.get().first
+
 }
