@@ -16,8 +16,8 @@ import org.json.simple.JSONArray
 import org.json.simple.JSONObject
 import org.json.simple.parser.JSONParser
 import ru.cleverclover.metacalendar.Cashed
-import ru.cleverclover.metacalendar.PeriodFromRangeDefinition
-import ru.cleverclover.metacalendar.period
+import ru.cleverclover.metacalendar.parse.PeriodFromRangeDefinition
+import ru.cleverclover.metacalendar.parse.period
 import java.io.InputStreamReader
 
 internal object Data {

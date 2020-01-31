@@ -15,8 +15,8 @@ package ru.cleverclover.huncale.timemachine
 import ru.cleverclover.huncale.Target
 import ru.cleverclover.huncale.Targets
 import ru.cleverclover.metacalendar.Cashed
-import ru.cleverclover.metacalendar.MetaCalendar
-import ru.cleverclover.metacalendar.NotedResolvedPeriod
+import ru.cleverclover.metacalendar.meta.MetaCalendar
+import ru.cleverclover.metacalendar.resolve.NotedResolvedPeriod
 import java.time.LocalDate
 import java.time.Month
 import java.time.ZoneId
@@ -43,8 +43,7 @@ internal class Beacons(private val observatory: Observatory) {
             "end" to bound(observatory.scope.to, observatory.future),
             "distance" to observatory.scope.length(),
             "maxScope" to 300, // todo:constant somehow
-            "moveStepLabel" to "28 дней")  //lc.itgroup.hunta.HuntingCalendarController#composeBeacons
-
+            "moveStepLabel" to "28 дней")
 
     private fun now() = with(LocalDate.now()) {
         mapOf("offset" to ChronoUnit.DAYS.between(observatory.scope.from, this) + 1,
