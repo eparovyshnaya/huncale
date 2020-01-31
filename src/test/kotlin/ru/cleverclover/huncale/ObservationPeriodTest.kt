@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Copyright (c) 2019, 2020 CleverClover
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the MIT which is available at
+ * https://spdx.org/licenses/MIT.html#licenseText
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * Contributors:
+ *     CleverClover - initial API and implementation
+ *******************************************************************************/
 package ru.cleverclover.huncale
 
 import org.junit.Assert.assertEquals
@@ -15,6 +27,7 @@ import kotlin.streams.asStream
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class ObservationPeriodTest {
+
     @Test
     fun plainYears() {
         assertEquals(setOf(2019), plainPeriod().years().toSet())
@@ -40,9 +53,9 @@ class ObservationPeriodTest {
 
     @ParameterizedTest(name = "plain year period: {0}.{1} month bounds are [{2}, {3}]")
     @CsvSource(
-            "2019, 2, 2, 28",
-            "2019, 3, 1, 31",
-            "2019, 4, 1, 12"
+        "2019, 2, 2, 28",
+        "2019, 3, 1, 31",
+        "2019, 4, 1, 12"
     )
     fun plainMonthBounds(year: Int, month: Int, start: Int, end: Int) {
         with(plainPeriod()) {
@@ -53,10 +66,10 @@ class ObservationPeriodTest {
 
     @ParameterizedTest(name = "cross year period: {0}.{1} month bounds are [{2}, {3}]")
     @CsvSource(
-            "2019, 12, 2, 31",
-            "2020, 1, 1, 31",
-            "2020, 2, 1, 29",
-            "2020, 3, 1, 1"
+        "2019, 12, 2, 31",
+        "2020, 1, 1, 31",
+        "2020, 2, 1, 29",
+        "2020, 3, 1, 1"
     )
     fun wideMonthBounds(year: Int, month: Int, start: Int, end: Int) {
         with(crossYearPeriod()) {
@@ -110,32 +123,37 @@ class ObservationPeriodTest {
 
     private fun doNotIntersect(period: ObservationPeriod) = with(period) {
         sequenceOf(
-                Pair(from.minusMonths(1), from.minusDays(1)),
-                Pair(to.plusDays(1), to.plusMonths(2)),
-                Pair(from.plusYears(1).plusDays(1), to.plusYears(1).minusDays(1))
+            Pair(from.minusMonths(1), from.minusDays(1)),
+            Pair(to.plusDays(1), to.plusMonths(2)),
+            Pair(from.plusYears(1).plusDays(1), to.plusYears(1).minusDays(1))
         ).asStream()
     }
 
     private fun intersect(period: ObservationPeriod) = with(period) {
         sequenceOf(
-                Pair(from.minusMonths(1), from),
-                Pair(from.minusMonths(1), from.plusDays(10)),
-                Pair(from.minusDays(10), to.plusDays(10)),
-                Pair(from.plusDays(1), to.minusDays(1)),
-                Pair(from.plusDays(1), to.plusDays(1)),
-                Pair(to, to.plusDays(10)))
-                .asStream()
+            Pair(from.minusMonths(1), from),
+            Pair(from.minusMonths(1), from.plusDays(10)),
+            Pair(from.minusDays(10), to.plusDays(10)),
+            Pair(from.plusDays(1), to.minusDays(1)),
+            Pair(from.plusDays(1), to.plusDays(1)),
+            Pair(to, to.plusDays(10))
+        )
+            .asStream()
     }
 
     private fun singleDayPeriod() = ObservationPeriod(
-            LocalDate.of(2019, Month.FEBRUARY, 1),
-            LocalDate.of(2019, Month.FEBRUARY, 1))
+        LocalDate.of(2019, Month.FEBRUARY, 1),
+        LocalDate.of(2019, Month.FEBRUARY, 1)
+    )
 
     private fun plainPeriod() = ObservationPeriod(
-            LocalDate.of(2019, Month.FEBRUARY, 2),
-            LocalDate.of(2019, Month.APRIL, 12))
+        LocalDate.of(2019, Month.FEBRUARY, 2),
+        LocalDate.of(2019, Month.APRIL, 12)
+    )
 
     private fun crossYearPeriod() = ObservationPeriod(
-            LocalDate.of(2019, Month.DECEMBER, 2),
-            LocalDate.of(2020, Month.MARCH, 1))
+        LocalDate.of(2019, Month.DECEMBER, 2),
+        LocalDate.of(2020, Month.MARCH, 1)
+    )
+
 }
