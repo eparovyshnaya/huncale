@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.50"
-    kotlin("plugin.spring") version "1.3.50"
+    kotlin("jvm") version "1.3.61"
+    kotlin("plugin.spring") version "1.3.61"
     id("org.springframework.boot") version "2.1.6.RELEASE"
     id("io.spring.dependency-management") version "1.0.7.RELEASE"
 }
@@ -25,8 +25,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation("com.googlecode.json-simple:json-simple:1.1.1")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    //implementation("ru.clever-clover.meta-calendar:meta-calendar:1.0.1")
-    implementation(fileTree("../meta-calendar/build/libs"))
+    implementation("ru.clever-clover.meta-calendar:meta-calendar:2.0.0")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.5.1")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.5.1")
